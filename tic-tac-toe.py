@@ -1,0 +1,7 @@
+print('1|2|3')
+print('-+-+-')
+print('4|5|6')
+print('-+-+-')
+print('7|8|9')
+print()
+choice_x = int(input("x's turn to choose a square (1-9): "))
