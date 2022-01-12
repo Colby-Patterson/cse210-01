@@ -19,9 +19,9 @@ def main():
             print(current_player + " wins!")
             break
         
-        elif check == "Tie":
+        elif check == "Draw":
             display_board(board)
-            print("It's a tie!")
+            print("It's a draw!")
         
         
         if current_player == "x":
@@ -51,7 +51,7 @@ def check_win(turn_count, board):
             return "Win"
         
         elif turn_count == 9:
-            return "Tie"
+            return "Draw"
         
 if __name__ == "__main__":
     main()
