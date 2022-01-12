@@ -3,6 +3,14 @@
 def main():
     board = {'1': '1' , '2': '2' , '3': '3' , '4': '4' , '5': '5' , '6': '6' , '7': '7' , '8': '8' , '9': '9' }
     display_board(board)
+    current_player = "x"
+    turn_count = 0
+    
+    while turn_count < 9:
+        display_board(board)
+        current_move = input("Select a number: ")
+        board[current_move] = current_player
+        turn_count += 1
 
 
 def display_board(board):
