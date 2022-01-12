@@ -8,6 +8,8 @@ def main():
     while turn_count < 9:
         display_board(board)
         current_move = input("Select a number " + current_player + ": ")
+        while board[current_move] == "x" or board[current_move] == "y":
+            current_move = input("Sorry, that space is taken. Please enter another number: ")
         board[current_move] = current_player
         turn_count += 1
         print("")
